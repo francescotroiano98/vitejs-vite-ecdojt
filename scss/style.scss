@@ -1,0 +1,53 @@
+// ABSTRACT
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+$font-size-base: 14px;
+
+$custom-colors: (
+  primary: $black,
+);
+
+$additional-breakpoints: (
+  xxxl: 1600px,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$grid-breakpoints: map-merge($grid-breakpoints, $additional-breakpoints);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  xxxl: 1000px,
+);
+
+$border-radius: 0;
+$border-color: $gray-400;
+$btn-padding-y: $spacer;
+$btn-padding-x: $spacer * 4;
+
+// CUSTOM VARS
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
+
+// COMPONENTS
+@import 'bootstrap/scss/root';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/images';
+@import 'bootstrap/scss/containers';
+@import 'bootstrap/scss/grid';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/buttons';
+
+// Helpers
+@import 'bootstrap/scss/helpers';
+@import 'bootstrap/scss/utilities/api';
+
+// ❌❌❌❌❌❌❌❌❌
+// .btn-primary {
+//   background-color: hotpink;
+// }
